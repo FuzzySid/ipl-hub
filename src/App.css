@@ -1,5 +1,4 @@
 .table_container{
-  margin-top: 10%;
   width: 100%;
 }
 
@@ -27,5 +26,17 @@
 .MuiTableContainer-root {
   width: 100%;
   overflow-x: auto;
-  max-height: 400px;
+  height: 400px;
+  margin-top: 25px;
+}
+
+.MuiTable-stickyHeader {
+  border-collapse: unset !important;
+}
+
+.header{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 20px;
 }
