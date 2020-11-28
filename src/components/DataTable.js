@@ -63,7 +63,7 @@ export const DataTable = ({pathType}) => {
     },[])
     return (
       <>
-        <TableContainer component={Paper}>
+        <TableContainer>
           <Table className={classes.table} aria-label="simple table" stickyHeader={true}>
             <TableHead>
               <TableRow>
