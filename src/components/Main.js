@@ -10,11 +10,11 @@ export const Main = () => {
     const [nav,setNav]=useState(1);
 
     return (
-        <div className="page">
-        <div className="card">
+        <div className="main">
+        <div className="main__card">
             { nav<=2 ? 
                     <>
-                        <div class="container">
+                        <div class="main__container">
                                 { nav===1 && <Home setNav={setNav}/> }
                                 { nav===2 && <>
                                                 <div class="header"><BackButton nav={nav} setNav={setNav}/></div>
@@ -22,10 +22,10 @@ export const Main = () => {
                                             </> 
                                 }
                         </div>
-                        <div className="photo"></div>
+                        <div className="main__photo"></div>
                     </>
                     :
-                        <div className="table_container">
+                        <div className="main__tableContainer">
                             <DataTable nav={nav} setNav={setNav} />
                         </div>
             } 

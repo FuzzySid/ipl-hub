@@ -16,6 +16,7 @@ import { getPathType } from '../utils/getPathType';
 import { BackButton } from './buttons/BackButton';
 import { Search } from './Search';
 import { FilterPanel } from './FilterPanel';
+import './DataTable.css';
 
 
 const useStyles = makeStyles({
@@ -61,10 +62,10 @@ export const DataTable = ({nav,setNav}) => {
             setDataCopy(_data)
         })
     },[])
-
+    console.log(tableType)
     return (
       <>
-      <div class="header">
+      <div class="dataTable__header">
           <BackButton nav={nav} setNav={setNav} />
           <h3>{tableType.title}</h3>
           <Search data={data} setSearchedData={setDataCopy} searchPlaceholder={tableType.searchPlaceholder} searchParams={tableType.searchParams}/>

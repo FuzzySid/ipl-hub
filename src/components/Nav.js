@@ -7,7 +7,6 @@ import Divider from '@material-ui/core/Divider';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
-import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,9 +33,9 @@ export const Nav = ({setNav}) => {
       <ListItemText
         primary="Teamwise Statistics"
         secondary={
-          <React.Fragment>
+          <>
             {"Explore winning statistics and percentage of all teams."}
-          </React.Fragment>
+          </>
         }
       />
     </ListItem>
@@ -48,9 +47,9 @@ export const Nav = ({setNav}) => {
       <ListItemText
         primary="Matches"
         secondary={
-          <React.Fragment>
+          <>
             {'Search, sort and filter through every match happened in the IPL history'}
-          </React.Fragment>
+          </>
         }
       />
     </ListItem>
@@ -62,9 +61,9 @@ export const Nav = ({setNav}) => {
       <ListItemText
         primary="Batsman Statistics"
         secondary={
-          <React.Fragment>
+          <>
             {'View strikerates, avergaes and total runs of all batsman'}
-          </React.Fragment>
+          </>
         }
       />
     </ListItem>
@@ -76,9 +75,9 @@ export const Nav = ({setNav}) => {
       <ListItemText
         primary="Players"
         secondary={
-          <React.Fragment>
+          <>
             {'Search and filter through players and their details'}
-          </React.Fragment>
+          </>
         }
       />
     </ListItem>

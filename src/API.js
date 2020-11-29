@@ -1,5 +1,4 @@
 export const paths={
-    'GET_ALL_TEAMS':'./Teams.json',
     'GET_TEAM_STATS':'./Team-Stats.json',
     'GET_BATSMEN_STATS':'./Batsmen-Stats.json',
     'GET_MATCHES':'./Matches.json',

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 import Chip from '@material-ui/core/Chip';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import { makeStyles } from '@material-ui/core/styles';
@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 export const Filter = ({data,setFilteredData,initSelectedFilters,selectedFilters,setSelectedFilters,filters}) => {
     const classes = useStyles();
 
-
     const handleChange=(param,val)=>{
         console.log(param,val)
         let temp=selectedFilters[param];
@@ -34,7 +33,10 @@ export const Filter = ({data,setFilteredData,initSelectedFilters,selectedFilters
         })
     }
 
-    const CancelFilters=()=>setSelectedFilters(initSelectedFilters)
+    const CancelFilters=()=>{
+      setSelectedFilters(initSelectedFilters)
+      setFilteredData(data)
+    }
 
     const ApplyFilters=()=>{
         const filteredData=filter(data,selectedFilters);
@@ -46,7 +48,6 @@ export const Filter = ({data,setFilteredData,initSelectedFilters,selectedFilters
         <div className="filter">
             {
               filters && Object.keys(filters).map((param)=>{
-                //console.log(param,filters[param])
                   return(
                     <div className={classes.root}>
                     <Autocomplete
@@ -77,7 +78,7 @@ export const Filter = ({data,setFilteredData,initSelectedFilters,selectedFilters
                   )
               })
               }
-            <div class="filter_action">
+            <div class="filter__action">
                 <button className="btn applyBtn navBtn" onClick={ApplyFilters}>Apply</button>
                 <button className="btn cancelBtn" onClick={CancelFilters}>Cancel</button>
             </div>

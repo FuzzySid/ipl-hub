@@ -17,7 +17,7 @@ export const getPathType=(nav)=>{
         searchPlaceholder:'Search by city,team,venue,players or umpire',
         key:'id',
         searchParams:['team1','team2','toss-winner','winner','player_of_match','venue','umpire1','umpire2','umpire3'],
-        filterParams:[]
+        filterParams:['Season','city','winner','player_of_match','venue'],
     };
     else if(nav===5)
     return {

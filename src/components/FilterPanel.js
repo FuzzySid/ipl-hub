@@ -8,7 +8,7 @@ import FormControl from '@material-ui/core/FormControl';
 import {capitalize} from '../utils/capitalize';
 import { getUniqeValues } from '../utils/getUniqueValues';
 import { Filter } from './Filter';
-import './Filter.css';
+import './FilterPanel.css';
 
 const useStyles = makeStyles((theme)=>({
   list: {
@@ -33,10 +33,14 @@ export const FilterPanel = ({data,setFilteredData,filterParams}) => {
   const [open, setOpen] = React.useState(false);
 
   let initFilters={}
-  let initSelectedFilters=filterParams.reduce((obj,filterParam)=> Object.assign(obj,{[capitalize(filterParam)]:[]}),{})
-  filterParams.map(filterParam=>initFilters[capitalize(filterParam)]=getUniqeValues(data,filterParam))
-  //console.log(initFilters,initSelectedFilters)
-  //const [filters,setFilters]=useState(initFilters);
+  let initSelectedFilters=filterParams.reduce((obj,filterParam)=> 
+      Object.assign(obj,{[capitalize(filterParam)]:[]})
+    ,{})
+  console.log(initFilters)
+  filterParams.map(filterParam=>
+    initFilters[capitalize(filterParam)]=getUniqeValues(data,filterParam)
+  )
+  
   const [selectedFilters,setSelectedFilters]=useState(initSelectedFilters);
 
   const toggleDrawer = (toggleState) => (event) => {
@@ -60,7 +64,7 @@ export const FilterPanel = ({data,setFilteredData,filterParams}) => {
             onOpen={toggleDrawer(true)}
           >
             <FormControl component="fieldset" className={classes.formControl}>
-            <h4>Filter By</h4>
+            <h4>Add Filters</h4>
               <Filter 
                 data={data} 
                 setFilteredData={setFilteredData} 

@@ -8,17 +8,13 @@ export const filter=(data,filter)=>{
             parsedItem[capitalize(key)]=val
         }
         Object.keys(filter).forEach(_filterKey=>{
-            //console.log(_filterKey,parsedItem)
-            const a=filter[_filterKey].map(_val=>capitalize(_val).toLowerCase().replace(/\s+/g, ''))
-            const b=capitalize(parsedItem[_filterKey]).toLowerCase().replace(/\s+/g, '');
-            
-            if(a.indexOf(b)===-1){
-                console.log('false for',a,b,typeof(b))
+            const filteredParams=filter[_filterKey].map(_val=>capitalize(_val).toLowerCase().replace(/\s+/g, ''))
+            const currentItem=capitalize(parsedItem[_filterKey]).toLowerCase().replace(/\s+/g, '');
+            if(filteredParams.length>0 && filteredParams.indexOf(currentItem)===-1){
                 shouldInclude=false;
                 return;
-            }else{
-                console.log(a,b)
             }
+            
         })
         return shouldInclude;
     })
