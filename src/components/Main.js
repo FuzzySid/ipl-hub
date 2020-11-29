@@ -22,12 +22,12 @@ export const Main = () => {
                                             </> 
                                 }
                         </div>
-                    <div className="photo"></div>
+                        <div className="photo"></div>
                     </>
                     :
-                    <div className="table_container">
-                        <DataTable nav={nav} setNav={setNav} />
-                    </div>
+                        <div className="table_container">
+                            <DataTable nav={nav} setNav={setNav} />
+                        </div>
             } 
         </div>
       </div>

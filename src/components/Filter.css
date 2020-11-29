@@ -1,0 +1,35 @@
+.filterPanel h4{
+    color: gray;
+}
+
+.filter{
+    display:flex;
+    /* flex-direction: column; */
+}
+
+.MuiDrawer-paperAnchorBottom{
+    padding:10px;
+}
+
+.MuiFormControlLabel-label{
+    font-size: 14px;
+}
+
+.MuiFormControl-root{
+    width: auto;
+}
+
+.applyBtn{
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.cancelBtn{
+    margin-left: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: gray;
+    color: #fff;
+}
