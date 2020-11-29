@@ -1,14 +1,14 @@
-.tabledataTable__header__label{
+.tableHeader__label{
     display: flex;
     align-items: center;
     cursor: pointer;
   }
-  .tabledataTable__header__label>span{
+  .tableHeader__label>span{
     font-weight: 600;
     font-size: 13px;
   }
   
-  .tabledataTable__header__label > .MuiSvgIcon-root{
+  .tableHeader__label > .MuiSvgIcon-root{
     font-size: 14px;
     color: gray;
     margin-right: 5px;

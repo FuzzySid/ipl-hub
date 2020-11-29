@@ -16,7 +16,7 @@ import { getPathType } from '../utils/getPathType';
 import { BackButton } from './buttons/BackButton';
 import { Search } from './Search';
 import { FilterPanel } from './FilterPanel';
-import './DataTable.css';
+import './DataTable.css'
 
 
 const useStyles = makeStyles({
@@ -89,7 +89,7 @@ export const DataTable = ({nav,setNav}) => {
                                     <></>
 
                                 }
-                                <span class="tableHeader__label">{capitalize(key)}</span>
+                                <span>{capitalize(key)}</span>
                             </div>
                             </TableCell>
                           )
