@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ipl-hub/static/css/main.5114c970.chunk.css",
-    "main.js": "/ipl-hub/static/js/main.923ec03c.chunk.js",
-    "main.js.map": "/ipl-hub/static/js/main.923ec03c.chunk.js.map",
+    "main.css": "/ipl-hub/static/css/main.14ff0cb2.chunk.css",
+    "main.js": "/ipl-hub/static/js/main.a7e9cd18.chunk.js",
+    "main.js.map": "/ipl-hub/static/js/main.a7e9cd18.chunk.js.map",
     "runtime-main.js": "/ipl-hub/static/js/runtime-main.fa5c3652.js",
     "runtime-main.js.map": "/ipl-hub/static/js/runtime-main.fa5c3652.js.map",
     "static/js/2.af27a364.chunk.js": "/ipl-hub/static/js/2.af27a364.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.df6c77bc.chunk.js": "/ipl-hub/static/js/3.df6c77bc.chunk.js",
     "static/js/3.df6c77bc.chunk.js.map": "/ipl-hub/static/js/3.df6c77bc.chunk.js.map",
     "index.html": "/ipl-hub/index.html",
-    "static/css/main.5114c970.chunk.css.map": "/ipl-hub/static/css/main.5114c970.chunk.css.map",
+    "static/css/main.14ff0cb2.chunk.css.map": "/ipl-hub/static/css/main.14ff0cb2.chunk.css.map",
     "static/js/2.af27a364.chunk.js.LICENSE.txt": "/ipl-hub/static/js/2.af27a364.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fa5c3652.js",
     "static/js/2.af27a364.chunk.js",
-    "static/css/main.5114c970.chunk.css",
-    "static/js/main.923ec03c.chunk.js"
+    "static/css/main.14ff0cb2.chunk.css",
+    "static/js/main.a7e9cd18.chunk.js"
   ]
 }
