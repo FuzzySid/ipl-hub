@@ -1,6 +1,6 @@
 
 Project is hosted [here](fuzzysid.github.io/ipl-hub/)
-
+The page load time was calucated using the Network tab inside Chrome Dev Tools. It is assumed that the initial page load time of the app is the time required to fetch the required javascript files (javascript bundles from react build).
   
 
 **Initial Page Load Time**
